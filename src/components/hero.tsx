@@ -9,8 +9,13 @@ export default function Hero() {
         parallaxOn
         hoverDuration={0.3}
         spinDuration={4}
+        proximity={20}
       />
-      <Button className="cursor-target cursor-none">Download app</Button>
+      <Button
+        className="cursor-target cursor-none"
+      >
+        Download app
+      </Button>
     </div>
   )
 }
