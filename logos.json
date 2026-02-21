@@ -1,0 +1,24 @@
+{
+  "logos": [
+    {
+      "name": "vercel",
+      "file": "components/logos/vercel.tsx",
+      "createdAt": "2026-02-21T04:18:56.270Z"
+    },
+    {
+      "name": "electron",
+      "file": "components/logos/electron.tsx",
+      "createdAt": "2026-02-21T04:18:57.909Z"
+    },
+    {
+      "name": "remotion",
+      "file": "components/logos/remotion.tsx",
+      "createdAt": "2026-02-21T04:24:57.217Z"
+    },
+    {
+      "name": "vite",
+      "file": "components/logos/vite.tsx",
+      "createdAt": "2026-02-21T05:16:46.037Z"
+    }
+  ]
+}

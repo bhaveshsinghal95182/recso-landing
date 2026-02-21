@@ -1,8 +1,7 @@
-import Demo from './components/demo'
-import GradualBlurMemo from './components/GradualBlur'
 import { Header } from './components/header'
 import Hero from './components/hero'
 import TargetCursor from './components/TargetCursor'
+import About from './components/about'
 
 function App() {
   return (
@@ -10,8 +9,7 @@ function App() {
       <Header />
       <div className="w-full">
         <Hero />
-        <GradualBlurMemo />
-        <Demo />
+        <About />
       </div>
       <TargetCursor
         hideDefaultCursor

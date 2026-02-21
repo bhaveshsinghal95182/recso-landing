@@ -2,7 +2,7 @@ import Windows from './svgs/windows'
 
 export default function Hero() {
   return (
-    <div className="min-h-screen w-full bg-black relative">
+    <div className="min-h-[calc(100vh-4rem)] snap-center h-full w-full bg-black relative">
       <div
         className="absolute inset-0 z-0"
         style={{
@@ -14,7 +14,7 @@ export default function Hero() {
         }}
       />
       <div className="relative z-10">
-        <div className="max-w-full h-screen flex flex-col items-center pt-32 gap-6 ">
+        <div className="max-w-full flex flex-col items-center pt-32 gap-6 ">
           <h1 className="inter-regular text-7xl tracking-tight text-center">
             Create{' '}
             <span className="instrument-serif-regular text-primary cursor-target">
@@ -25,11 +25,11 @@ export default function Hero() {
               <span className="text-primary cursor-target">in Seconds</span>
             </span>
           </h1>
-          <button className="magnet-target proximity-40 cursor-none text-xl tracking-tighter bg-primary text-background px-4 py-2 rounded-sm flex items-center gap-2 inter-semibold shadow-lg shadow-background/10">
+          <button className="magnet-target proximity-40 cursor-none text-xl tracking-tighter bg-primary text-background px-4 py-2 rounded-sm flex items-center gap-2 inter-semibold shadow-lg shadow-background/10 mt-8">
             <Windows size="30" />
             Download for Free
           </button>
-          <div className='pt-32'>
+          <div className='pt-12'>
             <video
               src="/demo.webm"
               autoPlay
