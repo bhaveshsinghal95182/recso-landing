@@ -11,33 +11,33 @@ import {
 
 const features = [
   {
-    title: "Inbuilt Screen Recorder",
-    description: "Record up to 50 Mbps in MP4, MKV, or WebM formats natively.",
+    title: "Screen Recorder",
+    description: "Native 50 Mbps recording in MP4, MKV, or WebM.",
     icon: <Video className="w-5 h-5" />,
   },
   {
-    title: "Seamless Video Editor",
-    description: "Each project is a folder. Open it, and your video is instantly imported onto a single timeline.",
+    title: "Video Editor",
+    description: "Instant single-timeline import from project folders.",
     icon: <FolderOpenDot className="w-5 h-5" />,
   },
   {
     title: "Magic Regions",
-    description: "Simple drag/drop and resize UI for cut and zoom regions. One click makes the region follow your mouse.",
+    description: "Simple drag/drop cuts & zooms with mouse tracking.",
     icon: <MousePointerClick className="w-5 h-5" />,
   },
   {
-    title: "Lightning Fast Demos",
-    description: "Just 3 clicks to create smooth zoom and panning effects. Minimal effort for maximum impact.",
+    title: "Fast Demos",
+    description: "Smooth cinematic pans in just 3 clicks.",
     icon: <Wand2 className="w-5 h-5" />,
   },
   {
-    title: "Beautiful Backgrounds",
-    description: "Add solid colors, typical patterns, or bring any JSX element from patterncraft.fun as your background.",
+    title: "Backgrounds",
+    description: "Solid colors, patterns, or custom JSX support.",
     icon: <ImageIcon className="w-5 h-5" />,
   },
   {
     title: "Lossless Exports",
-    description: "Export stunning web-ready product demos at up to 4K 60fps in MP4 and WebM formats.",
+    description: "4K 60fps exports in web-ready formats.",
     icon: <Settings2 className="w-5 h-5" />,
   },
 ];
@@ -50,15 +50,7 @@ export function Pricing() {
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 flex flex-col items-center justify-center">
         <div className="max-w-2xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary mb-8"
-          >
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm font-medium tracking-wide inter-semibold">EARLY ACCESS</span>
-          </motion.div>
+          
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -127,17 +119,19 @@ export function Pricing() {
               
               <div className="mx-auto max-w-xs px-8 relative z-10">
                 <p className="text-base font-semibold text-white inter-semibold">Exclusive to Microsoft Store</p>
-                <p className="mt-6 flex items-baseline justify-center gap-x-2">
-                  <span className="text-5xl font-bold tracking-tight text-white instrument-serif-regular">7 Days</span>
-                  <span className="text-sm font-semibold leading-6 tracking-wide text-muted-foreground inter-semibold uppercase">Free</span>
-                </p>
-                <div className="mt-4 text-sm text-muted-foreground inter-regular">
-                  Start your free trial today. Cancel anytime.
+                <div className="mt-6 flex flex-col items-center justify-center">
+                  <div className="flex items-baseline justify-center gap-x-3">
+                    <span className="text-4xl font-bold tracking-tight text-muted-foreground/60 line-through decoration-red-500/70 instrument-serif-regular">$59</span>
+                    <span className="text-6xl font-bold tracking-tight text-white instrument-serif-regular">$9.99</span>
+                  </div>
+                  <div className="mt-3 flex items-center justify-center">
+                    <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest inter-semibold">Includes 7 Days Free Trial</span>
+                  </div>
                 </div>
                 
                 <a
                   href="#"
-                  className="mt-10 flex w-full rounded-xl bg-white px-3 py-4 text-center text-sm font-semibold text-black shadow-sm hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all hover:scale-[1.02] active:scale-[0.98] items-center justify-center gap-2 group/btn"
+                  className="mt-10 flex w-full rounded-xl bg-white px-3 py-4 text-center text-sm font-semibold text-black shadow-sm hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all hover:scale-[1.02] active:scale-[0.98] items-center justify-center gap-2 group/btn cursor-none cursor-target"
                 >
                   <MonitorPlay className="w-5 h-5 group-hover/btn:scale-110 transition-transform" />
                   <span>Get it from Microsoft Store</span>
