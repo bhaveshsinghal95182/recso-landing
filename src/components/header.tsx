@@ -1,4 +1,5 @@
 'use client'
+import { Link } from 'react-router-dom'
 import { cn } from '@/lib/utils'
 import { useScroll } from '@/hooks/use-scroll'
 import { Button } from '@/components/ui/button'
@@ -11,7 +12,7 @@ export const navLinks = [
   },
   {
     label: 'Pricing',
-    href: '#pricing',
+    href: '/pricing',
   },
   {
     label: 'About',
@@ -40,12 +41,12 @@ export function Header() {
           },
         )}
       >
-        <a
+        <Link
           className="rounded-md p-2 hover:bg-muted dark:hover:bg-muted/50 cursor-none proximity-50 cursor-target instrument-serif-regular text-2xl"
-          href="#"
+          to="/"
         >
 					Recso
-        </a>
+        </Link>
         <div className="hidden items-center gap-2 md:flex">
           {navLinks.map((link) => (
             <Button
@@ -55,7 +56,11 @@ export function Header() {
               variant="ghost"
               className="cursor-none"
             >
-              <a href={link.href}>{link.label}</a>
+              {link.href.startsWith('#') ? (
+                <a href={link.href}>{link.label}</a>
+              ) : (
+                <Link to={link.href}>{link.label}</Link>
+              )}
             </Button>
           ))}
         </div>

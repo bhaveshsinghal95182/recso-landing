@@ -1,15 +1,24 @@
+import { Routes, Route } from 'react-router-dom'
 import { Header } from './components/header'
 import Hero from './components/hero'
 import TargetCursor from './components/TargetCursor'
 import About from './components/about'
+import { Pricing } from './components/pricing'
 
 function App() {
   return (
     <div className="relative w-full bg-background text-foreground selection:bg-primary/20">
       <Header />
       <div className="w-full">
-        <Hero />
-        <About />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <About />
+            </>
+          } />
+          <Route path="/pricing" element={<Pricing />} />
+        </Routes>
       </div>
       <TargetCursor
         hideDefaultCursor
