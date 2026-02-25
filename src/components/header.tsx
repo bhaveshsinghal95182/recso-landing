@@ -60,9 +60,6 @@ export function Header() {
           ))}
         </div>
         <div className="hidden items-center gap-2 md:flex">
-          <Button size="sm" variant="outline" className="cursor-none">
-            Sign In
-          </Button>
           <Button size="sm" className="cursor-none magnet-target proximity-10">
             Download
           </Button>

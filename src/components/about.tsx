@@ -24,7 +24,6 @@ export default function About() {
     offset: ["start start", "end end"]
   })
 
-  // The fill progresses as the user scrolls through the 200vh section
   const fillProgress = useTransform(scrollYProgress, [0.1, 0.8], [0, 1])
 
   return (

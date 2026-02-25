@@ -29,7 +29,10 @@ export default function Hero() {
             <Windows size="30" />
             Download for Free
           </button>
-          <div className='pt-12'>
+          <p className="text-muted-foreground inter-regular text-sm -mt-4">
+            7-day free trial available
+          </p>
+          <div className="pt-12">
             <video
               src="/demo.webm"
               autoPlay
