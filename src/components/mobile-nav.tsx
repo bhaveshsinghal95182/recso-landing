@@ -48,10 +48,9 @@ export function MobileNav() {
 							))}
 						</div>
 						<div className="mt-12 flex flex-col gap-2">
-							<Button className="w-full" variant="outline">
-								Sign In
+							<Button className="w-full cursor-target">
+								Download
 							</Button>
-							<Button className="w-full">Get Started</Button>
 						</div>
 					</div>
 				</Portal>
