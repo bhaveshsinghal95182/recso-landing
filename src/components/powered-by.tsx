@@ -28,7 +28,6 @@ const logos = [
 
 function LogoItem({
   Component,
-  name,
 }: {
   Component: (typeof logos)[number]['Component']
   name: string

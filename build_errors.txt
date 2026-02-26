@@ -1,0 +1,3 @@
+src/components/GradualBlur.tsx(2,3): error TS1484: 'CSSProperties' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/components/GradualBlur.tsx(7,3): error TS1484: 'PropsWithChildren' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/components/powered-by.tsx(31,3): error TS6133: 'name' is declared but its value is never read.
