@@ -33,8 +33,8 @@ export default function About() {
       className="relative h-[150vh] w-full bg-background snap-end snap-always"
     >
       <div className="sticky top-0 h-screen w-full flex flex-col items-center justify-center p-4 md:p-8">
-        <div className="relative w-full max-w-5xl rounded-3xl border border-border/60 bg-card/30 p-4 md:p-8 lg:p-12 flex flex-col md:flex-row items-center gap-12 lg:gap-16 overflow-hidden">
-          <div className="w-full md:w-1/2 space-y-8 z-10 md:pt-8 md:pl-4">
+        <div className="relative w-full max-w-5xl rounded-3xl border border-border/60 bg-card/30 p-4 md:p-8 lg:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12 lg:gap-16 overflow-hidden">
+          <div className="w-full md:w-1/2 space-y-6 md:space-y-8 z-10 md:pt-8 md:pl-4">
             <div className="space-y-2">
               <h2 className="inter-regular tracking-tight text-3xl lg:text-[2.75rem] leading-[1.1] text-foreground font-medium">
                 <span className="instrument-serif-regular block">
@@ -49,8 +49,8 @@ export default function About() {
               </h3>
             </div>
 
-            <div className="space-y-6 pt-2">
-              <p className="inter-regular tracking-tight text-foreground text-lg leading-relaxed">
+            <div className="space-y-4 md:space-y-6 pt-2">
+              <p className="inter-regular tracking-tight text-foreground text-base md:text-lg leading-relaxed">
                 <Highlight progress={fillProgress} color="#f87171">
                   Dragging keyframes in heavy editors
                 </Highlight>{' '}
@@ -59,7 +59,7 @@ export default function About() {
                   shouldn&apos;t slow you down.
                 </Highlight>
               </p>
-              <p className="inter-regular tracking-tight text-foreground text-lg leading-relaxed">
+              <p className="inter-regular tracking-tight text-foreground text-base md:text-lg leading-relaxed">
                 <Highlight progress={fillProgress} color="rgba(52, 211, 153, 0.6)">
                   <span className="cursor-target">
                     Recso

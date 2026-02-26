@@ -14,8 +14,8 @@ export default function Hero() {
         }}
       />
       <div className="relative z-10">
-        <div className="max-w-full flex flex-col items-center pt-32 gap-6 ">
-          <h1 className="inter-regular text-7xl tracking-tight text-center">
+        <div className="max-w-full flex flex-col items-center pt-20 md:pt-32 gap-6 px-4 sm:px-6">
+          <h1 className="inter-regular text-5xl sm:text-6xl md:text-7xl tracking-tight text-center">
             Create{' '}
             <span className="instrument-serif-regular text-primary cursor-target">
               Cinematic
@@ -32,13 +32,13 @@ export default function Hero() {
           <p className="text-muted-foreground inter-regular text-sm -mt-4">
             7-day free trial available
           </p>
-          <div className="pt-12">
+          <div className="pt-8 md:pt-12 w-full max-w-5xl px-2 sm:px-6">
             <video
               src="/demo.mp4"
               autoPlay
               loop
               muted
-              className="w-[900px] h-[500px] border-8 border-border object-cover rounded-md "
+              className="w-full h-auto aspect-video border-4 md:border-8 border-border object-cover rounded-lg shadow-2xl"
             />
           </div>
         </div>

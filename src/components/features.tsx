@@ -77,7 +77,7 @@ export function Features() {
     <section 
       id="features" 
       ref={containerRef}
-      className="relative bg-background"
+      className="relative bg-background snap-end snap-proximity"
       style={{ height: `${features.length * 60}vh` }}
     >
       {/* Sticky viewport container */}
@@ -90,15 +90,6 @@ export function Features() {
           
           {/* Left Side: Header & Context */}
           <div className="w-full md:w-5/12 text-center md:text-left">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary mb-8 cursor-default"
-            >
-              <span className="text-sm font-medium tracking-wide inter-semibold uppercase">Powerful Features</span>
-            </motion.div>
-            
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -134,9 +125,9 @@ export function Features() {
           </div>
 
           {/* Right Side: Interactive Feature Display */}
-          <div className="w-full md:w-6/12 relative h-[500px]">
+          <div className="w-full md:w-6/12 relative h-[400px] md:h-[500px]">
             {/* Main Interactive Display Box */}
-            <div className="absolute inset-0 rounded-[2.5rem] bg-primary/5 border border-primary/10 shadow-2xl backdrop-blur-3xl overflow-hidden flex flex-col p-10 lg:p-14">
+            <div className="absolute inset-0 rounded-[2.5rem] bg-primary/5 border border-primary/10 shadow-2xl backdrop-blur-3xl overflow-hidden flex flex-col p-6 sm:p-10 lg:p-14">
               
               {/* Progress Bar Header */}
               <div className="w-11/12 mx-auto flex gap-1 mb-10">
@@ -165,18 +156,18 @@ export function Features() {
                     transition={{ duration: 0.4, ease: "easeInOut" }}
                     className="absolute inset-0 flex flex-col justify-center pointer-events-auto z-10"
                   >
-                    <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-primary/10 ring-1 ring-primary/20 mb-8 overflow-hidden shadow-lg shadow-primary/20">
+                    <div className="flex h-16 w-16 md:h-20 md:w-20 items-center justify-center rounded-2xl bg-primary/10 ring-1 ring-primary/20 mb-6 md:mb-8 overflow-hidden shadow-lg shadow-primary/20">
                       <motion.div
                         animate={{ rotate: [0, -10, 10, -5, 5, 0] }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                       >
-                        <ActiveIcon className="h-10 w-10 text-primary" strokeWidth={1.5} />
+                        <ActiveIcon className="h-8 w-8 md:h-10 md:w-10 text-primary" strokeWidth={1.5} />
                       </motion.div>
                     </div>
-                    <h3 className="text-4xl font-medium text-foreground instrument-serif-regular mb-4">
+                    <h3 className="text-3xl md:text-4xl font-medium text-foreground instrument-serif-regular mb-3 md:mb-4">
                       {activeFeature.name}
                     </h3>
-                    <p className="text-xl leading-relaxed text-muted-foreground inter-regular max-w-md">
+                    <p className="text-lg md:text-xl leading-relaxed text-muted-foreground inter-regular max-w-md">
                       {activeFeature.description}
                     </p>
                   </motion.div>

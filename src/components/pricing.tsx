@@ -56,7 +56,7 @@ export function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-6xl font-medium tracking-tight instrument-serif-regular text-white mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight instrument-serif-regular text-white mb-6"
           >
             Start making <span className="cursor-target">stunning</span> demos.
           </motion.h2>
@@ -65,7 +65,7 @@ export function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-lg text-muted-foreground inter-regular leading-relaxed"
+            className="text-base sm:text-lg text-muted-foreground inter-regular leading-relaxed"
           >
             Recso is built for speed and quality. Turn a screen recording into a polished,
             professional product demo in just a few clicks.
@@ -80,8 +80,8 @@ export function Pricing() {
           className="mt-16 max-w-5xl rounded-3xl ring-1 ring-white/10 bg-white/5 backdrop-blur-2xl sm:mt-20 lg:mx-0 lg:flex"
         >
           {/* Left Pricing Panel */}
-          <div className="p-8 sm:p-10 lg:flex-auto">
-            <h3 className="text-3xl font-medium tracking-tight instrument-serif-regular text-white">
+          <div className="p-6 sm:p-8 lg:p-10 lg:flex-auto">
+            <h3 className="text-2xl sm:text-3xl font-medium tracking-tight instrument-serif-regular text-white">
               Recso Pro
             </h3>
             <p className="mt-4 text-base leading-7 text-muted-foreground inter-regular">
