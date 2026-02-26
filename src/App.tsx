@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import { Header } from './components/header'
 import Hero from './components/hero'
+import { Features } from './components/features'
 import TargetCursor from './components/TargetCursor'
 import About from './components/about'
 import { Pricing } from './components/pricing'
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={
             <>
               <Hero />
+              <Features />
               <About />
             </>
           } />
