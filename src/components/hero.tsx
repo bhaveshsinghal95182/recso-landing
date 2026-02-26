@@ -34,7 +34,7 @@ export default function Hero() {
           </p>
           <div className="pt-12">
             <video
-              src="/demo.webm"
+              src="/demo.mp4"
               autoPlay
               loop
               muted
