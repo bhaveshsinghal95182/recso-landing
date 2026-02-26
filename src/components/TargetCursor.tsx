@@ -36,8 +36,6 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
   const allTargetsRef = useRef<Element[]>([])
 
   const isMobile = useMemo(() => {
-    const hasTouchScreen =
-      'ontouchstart' in window || navigator.maxTouchPoints > 0
     const isSmallScreen = window.innerWidth <= 768
     const windowWithOpera = window as Window & { opera?: string }
     const userAgent =
@@ -45,7 +43,10 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
     const mobileRegex =
       /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i
     const isMobileUserAgent = mobileRegex.test(userAgent.toLowerCase())
-    return (hasTouchScreen && isSmallScreen) || isMobileUserAgent
+    // A better heuristic for "true mobile" versus just "a laptop with a touchscreen"
+    // is to check if it's primarily a touch interface without a fine pointer
+    const isCoarsePointer = window.matchMedia('(pointer: coarse)').matches
+    return isSmallScreen && (isCoarsePointer || isMobileUserAgent)
   }, [])
 
   const constants = useMemo(() => ({ borderWidth: 3, cornerSize: 12 }), [])
