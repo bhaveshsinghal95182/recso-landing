@@ -48,8 +48,8 @@ export function MobileNav() {
 							))}
 						</div>
 						<div className="mt-12 flex flex-col gap-2">
-							<Button className="w-full cursor-target">
-								Download
+							<Button asChild className="w-full cursor-target">
+								<a href="https://apps.microsoft.com/detail/9P697TXC3BCL?hl=en-us&gl=IN&ocid=pdpshare">Download</a>
 							</Button>
 						</div>
 					</div>

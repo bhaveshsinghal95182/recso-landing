@@ -65,8 +65,8 @@ export function Header() {
           ))}
         </div>
         <div className="hidden items-center gap-2 md:flex">
-          <Button size="sm" className="cursor-none magnet-target proximity-10">
-            Download
+          <Button size="sm" asChild className="cursor-none magnet-target proximity-10">
+            <a href="https://apps.microsoft.com/detail/9P697TXC3BCL?hl=en-us&gl=IN&ocid=pdpshare">Download</a>
           </Button>
         </div>
         <MobileNav />

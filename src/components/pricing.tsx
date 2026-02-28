@@ -130,7 +130,7 @@ export function Pricing() {
                 </div>
                 
                 <a
-                  href="#"
+                  href="https://apps.microsoft.com/detail/9P697TXC3BCL?hl=en-us&gl=IN&ocid=pdpshare"
                   className="mt-10 flex w-full rounded-xl bg-white px-3 py-4 text-center text-sm font-semibold text-black shadow-sm hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all hover:scale-[1.02] active:scale-[0.98] items-center justify-center gap-2 group/btn cursor-none cursor-target"
                 >
                   <MonitorPlay className="w-5 h-5 group-hover/btn:scale-110 transition-transform" />

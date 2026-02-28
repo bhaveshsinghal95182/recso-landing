@@ -25,10 +25,10 @@ export default function Hero() {
               <span className="text-primary cursor-target">in Seconds</span>
             </span>
           </h1>
-          <button className="magnet-target proximity-40 cursor-none text-xl tracking-tighter bg-primary text-background px-4 py-2 rounded-sm flex items-center gap-2 inter-semibold shadow-lg shadow-background/10 mt-8">
+          <a href="https://apps.microsoft.com/detail/9P697TXC3BCL?hl=en-us&gl=IN&ocid=pdpshare" className="magnet-target proximity-40 cursor-none text-xl tracking-tighter bg-primary text-background px-4 py-2 rounded-sm flex items-center gap-2 inter-semibold shadow-lg shadow-background/10 mt-8">
             <Windows size="30" />
             Download for Free
-          </button>
+          </a>
           <p className="text-muted-foreground inter-regular text-sm -mt-4">
             7-day free trial available
           </p>
