@@ -27,10 +27,10 @@ export default function Hero() {
           </h1>
           <a href="https://apps.microsoft.com/detail/9P697TXC3BCL?hl=en-us&gl=IN&ocid=pdpshare" className="magnet-target proximity-40 cursor-none text-xl tracking-tighter bg-primary text-background px-4 py-2 rounded-sm flex items-center gap-2 inter-semibold shadow-lg shadow-background/10 mt-8">
             <Windows size="30" />
-            Download for Free
+            Start Creating for Free
           </a>
-          <p className="text-muted-foreground inter-regular text-sm -mt-4">
-            7-day free trial available
+          <p className="text-muted-foreground inter-regular text-xs -mt-4">
+            7 days free • No credit card required
           </p>
           <div className="pt-8 md:pt-12 w-full max-w-5xl px-2 sm:px-6">
             <video
