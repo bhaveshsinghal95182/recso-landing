@@ -4,6 +4,8 @@ import Hero from './components/hero'
 import { Features } from './components/features'
 import TargetCursor from './components/TargetCursor'
 import About from './components/about'
+import { FAQ } from './components/faq'
+import { FAQPage } from './components/faq-page'
 import { Pricing } from './components/pricing'
 
 function App() {
@@ -17,9 +19,11 @@ function App() {
               <Hero />
               <Features />
               <About />
+              <FAQ />
             </>
           } />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/faq" element={<FAQPage />} />
         </Routes>
       </div>
       <TargetCursor

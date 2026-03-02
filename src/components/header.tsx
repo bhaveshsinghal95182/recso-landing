@@ -8,15 +8,15 @@ import { MobileNav } from '@/components/mobile-nav'
 export const navLinks = [
   {
     label: 'Features',
-    href: '#features',
+    href: '/#features',
   },
   {
     label: 'Pricing',
     href: '/pricing',
   },
   {
-    label: 'About',
-    href: '#about',
+    label: 'FAQ',
+    href: '/faq',
   },
 ]
 
@@ -56,7 +56,7 @@ export function Header() {
               variant="ghost"
               className="cursor-none"
             >
-              {link.href.startsWith('#') ? (
+              {link.href.includes('#') ? (
                 <a href={link.href}>{link.label}</a>
               ) : (
                 <Link to={link.href}>{link.label}</Link>
