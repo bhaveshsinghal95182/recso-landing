@@ -156,7 +156,7 @@ export function FAQPage() {
           <div className="mt-16 text-center">
             <p className="text-muted-foreground inter-regular mb-4">Still have questions?</p>
             <Button asChild size="lg" className="cursor-none cursor-target">
-              <a href="mailto:support@recso.app">Contact Support</a>
+              <a href="mailto:work.bhavesh22@gmail.com">Contact Support</a>
             </Button>
           </div>
         </div>
