@@ -122,7 +122,7 @@ export function Pricing() {
                 <div className="mt-6 flex flex-col items-center justify-center">
                   <div className="flex items-baseline justify-center gap-x-3">
                     <span className="text-4xl font-bold tracking-tight text-muted-foreground/60 line-through decoration-red-500/70 instrument-serif-regular">$59</span>
-                    <span className="text-6xl font-bold tracking-tight text-white instrument-serif-regular">$9.99</span>
+                    <span className="text-6xl font-bold tracking-tight text-white instrument-serif-regular">$19.99</span>
                   </div>
                   <div className="mt-3 flex items-center justify-center">
                     <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest inter-semibold">Includes 7 Days Free Trial</span>
